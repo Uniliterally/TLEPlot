@@ -29,7 +29,7 @@ def _calculateGroundTrack(earth, satellite, timeset):
     satLat  = np.arctan2(satPosition[2], rxy)
     satLong = np.arctan2(yAdj, xAdj)
 
-    plt.plot(np.rad2deg(satLong), np.rad2deg(satLat))
+    plt.plot(np.rad2deg(satLong), np.rad2deg(satLat), 'o')
 
 
 def main():
